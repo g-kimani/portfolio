@@ -28,12 +28,14 @@ export default function ProjectsCarousel() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
+          centerMode: false,
         },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
+          centerMode: false,
           slidesToScroll: 1,
         },
       },
@@ -67,7 +69,7 @@ export default function ProjectsCarousel() {
   };
   return (
     <>
-      <div className="slider-container">
+      <div className="slider-container p-2">
         <Slider {...settings} ref={sliderRef}>
           {cardsData.map((card, index) => (
             <div key={card.id} onClick={() => handleCardClick(index)}>

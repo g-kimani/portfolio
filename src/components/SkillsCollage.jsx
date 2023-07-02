@@ -5,7 +5,7 @@ export default function SkillsCollage() {
   display.splice(15, 1);
   return (
     <>
-      <div className="min-w-[450px]">
+      <div className="md:min-w-[450px] m-auto">
         <p className="block text-lg underline my-4 font-medium leading-6 text-center">
           Technologies
         </p>

@@ -3,7 +3,7 @@
 export default function AboutSection() {
   return (
     <>
-      <div className="flex items-center h-full px-16 text-white">
+      <div className="flex items-center h-full md:px-16 text-white">
         <div className="relative">
           <div className="flex items-end my-10 ">
             <p className="text-4xl font-bold tracking-tight sm:text-6xl">

@@ -6,12 +6,12 @@ export default function IntroSection() {
   return (
     <>
       <div>
-        <div className="flex flex-row  lg:mx-0 text-left">
+        <div className="flex flex-row flex-wrap lg:mx-0 text-left">
           <div className="max-w-2xl">
-            <p className="mt-16 text-md leading-8 text-gray-100">
+            <p className="mt-20 text-md leading-8 text-gray-100">
               Welcome to my portfolio my name is...
             </p>
-            <h1 className=" my-16 text-4xl font-bold tracking-tight sm:text-6xl">
+            <h1 className="my-8 md:my-16 text-4xl font-bold tracking-tight sm:text-6xl">
               George Kimani
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-100">
@@ -20,7 +20,7 @@ export default function IntroSection() {
               experiences that resonate with users.
             </p>
           </div>
-          <div className="flex  flex-col items-center justify-center w-full">
+          <div className="flex flex-col grow my-4 items-center justify-center">
             <p>You can contact me on any of my socials</p>
             <div className="scale-110 my-4">
               <ContactLinks size="large" />

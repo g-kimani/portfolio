@@ -5,7 +5,7 @@ export default function SkillsSection() {
   return (
     <>
       <div>
-        <div className="flex flex-row justify-between items-center mt-10 gap-20">
+        <div className="flex flex-row flex-wrap md:flex-nowrap justify-between items-center mt-10 gap-20">
           <div>
             <p className="block text-lg underline my-4 font-medium leading-6 text-center">
               My Skills
