@@ -80,24 +80,33 @@ export default function ProjectsCarousel() {
                 <div className="p-4">
                   <div className="flex flex-row py-2 gap-x-2">
                     <a href={card.github} target="_blank" rel="noreferrer">
-                      <div className="rounded-full hover:bg-red-300 p-1  flex items-center justify-center">
+                      <div className="rounded-full hover:bg-[#fde74c] font-semibold transition-all duration-500 p-1  flex items-center justify-center">
                         <GitHubIcon />
                       </div>
                     </a>
                     {card.liveDemo && (
                       <a href={card.liveDemo} target="_blank" rel="noreferrer">
-                        <div className="rounded-full hover:bg-red-300 p-1 px-2  flex items-center justify-center">
+                        <div className="rounded-full hover:bg-[#fde74c] font-semibold transition-all duration-500 p-1 px-2  flex items-center justify-center">
                           Live Demo
                         </div>
                       </a>
                     )}
                   </div>
-                  <h2>{card.title}</h2>
+                  <h2 className="text-base font-semibold leading-7 text-gray-900 my-2">
+                    {card.title}
+                  </h2>
                   <p>{card.description}</p>
                   <div className="flex flex-row my-2 gap-2">
-                    <h3 className="mr-3 font-semibold">Tech: </h3>
                     {card.tech?.map((t, index) => {
-                      return <img src={t} key={index} className="h-8" />;
+                      return (
+                        <img
+                          key={index}
+                          src={t.src}
+                          alt={t.alt}
+                          title={t.alt}
+                          className="h-8"
+                        />
+                      );
                     })}
                   </div>
                 </div>
@@ -114,11 +123,10 @@ const NextArrow = (props) => {
   const { className, style, onClick } = props;
   return (
     <div
-      className={className}
+      className={`${className} text-[#fde74c] hover:text-[#fde74c]`}
       style={{
         ...style,
         display: "block",
-        color: "red",
         right: "-20px",
       }}
       onClick={onClick}
@@ -144,8 +152,12 @@ const PrevArrow = (props) => {
   const { className, style, onClick } = props;
   return (
     <div
-      className={className}
-      style={{ ...style, display: "block", color: "red", left: "-20px" }}
+      className={`${className} text-[#fde74c] hover:text-[#fde74c]`}
+      style={{
+        ...style,
+        display: "block",
+        left: "-20px",
+      }}
       onClick={onClick}
     >
       <svg

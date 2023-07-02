@@ -33,14 +33,19 @@ export default function SkillsCarousel() {
 
   return (
     <>
-      <p className="text-left font-semibold text-gray-900">
+      <p className="text-left my-2 font-semibold text-gray-200">
         My current skill set includes:
       </p>
       <Slider {...settings}>
-        {skills.map((logo, index) => (
+        {Object.values(skills).map((logo, index) => (
           <div key={index} className="p-2">
-            <div className="w-full bg-white-200 p-4 rounded m-1 shadow-md flex justify-center items-center transition-all hover:scale-110">
-              <img className="h-40" src={logo} />
+            <div className="w-full bg-slate-200 p-4 rounded m-1 shadow-md flex justify-center items-center transition-all hover:scale-110">
+              <img
+                className="h-40"
+                src={logo.src}
+                alt={logo.alt}
+                title={logo.alt}
+              />
             </div>
           </div>
         ))}
@@ -54,11 +59,10 @@ const NextArrow = (props) => {
   const { className, style, onClick } = props;
   return (
     <div
-      className={className}
+      className={`${className} text-[#fde74c] hover:text-[#fde74c]`}
       style={{
         ...style,
         display: "block",
-        color: "red",
         right: "-20px",
       }}
       onClick={onClick}
@@ -84,8 +88,8 @@ const PrevArrow = (props) => {
   const { className, style, onClick } = props;
   return (
     <div
-      className={className}
-      style={{ ...style, display: "block", color: "red", left: "-20px" }}
+      className={`${className} text-[#fde74c] hover:text-[#fde74c]`}
+      style={{ ...style, display: "block", left: "-20px" }}
       onClick={onClick}
     >
       <svg
