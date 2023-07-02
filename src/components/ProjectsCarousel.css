@@ -4,7 +4,6 @@
   /* align-items: center; */
   min-height: 400px;
   font-size: 14px;
-  background-color: #fff;
   border-radius: 8px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
@@ -22,6 +21,8 @@
 .card:not(.active) {
   filter: blur(0.5px);
   cursor: pointer;
+  /* background-color: #060918; */
+  /* color: white; */
 }
 
 .card:not(.active) div {

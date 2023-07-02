@@ -15,10 +15,9 @@ export default function IntroSection() {
               George Kimani
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-100">
-              I am a Full Stack Developer based in London, UK. I have an
-              obsession with coding and I am specialising in web development. I
-              enjoy creating interactive web experiences that hopefully everyone
-              enjoys.
+              I&apos;m a dedicated Full Stack Developer based in London, UK.
+              Specializing in web development, I create dynamic and engaging web
+              experiences that resonate with users.
             </p>
           </div>
           <div className="flex  flex-col items-center justify-center w-full">

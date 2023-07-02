@@ -23,7 +23,7 @@ export default [
     image: AirPark,
     github: "https://github.com/g-kimani/airpark",
     description:
-      "AirPark is an AirBnB clone that lets users rent out their unused parking spaces. As my first mobile app I am really proud of how this turned out. It was part of a group project and we had 2 weeks to provide an MVP. It is a completeley Full Stack application with user authentication",
+      "AirPark is a Airbnb clone that lets users rent out their unused parking spaces. As my first mobile app I am really proud of how this turned out. It was part of a group project and we had 2 weeks to provide an MVP. It is a completeley Full Stack application with user authentication",
     tech: [
       skills.ts,
       skills.express,

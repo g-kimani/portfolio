@@ -1,6 +1,7 @@
 import ContactLinks from "../ContactLinks";
 import { useState } from "react";
 import Dialog from "../Dialog";
+import BackgroundGradient from "../BackgroundGradient";
 
 export default function ContactSection() {
   const [showPainting, setShowPainting] = useState(false);
@@ -30,6 +31,7 @@ export default function ContactSection() {
         <Dialog open={showPainting} setOpen={setShowPainting} />
 
         <p className="mt-10">&copy; 2023 George Kimani</p>
+        <BackgroundGradient to="#00ff00" />
       </div>
     </>
   );

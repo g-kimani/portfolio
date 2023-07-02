@@ -72,7 +72,7 @@ export default function ProjectsCarousel() {
           {cardsData.map((card, index) => (
             <div key={card.id} onClick={() => handleCardClick(index)}>
               <div
-                className={`card ${
+                className={`card bg-slate-200 ${
                   currentSlide % 3 === card.id - 1 ? "active" : ""
                 }`}
               >
@@ -92,7 +92,7 @@ export default function ProjectsCarousel() {
                       </a>
                     )}
                   </div>
-                  <h2 className="text-base font-semibold leading-7 text-gray-900 my-2">
+                  <h2 className="text-base font-semibold leading-7 my-2">
                     {card.title}
                   </h2>
                   <p>{card.description}</p>

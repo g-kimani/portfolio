@@ -11,7 +11,7 @@ export default function ProjectsSection() {
         </p>
         <ProjectsCarousel />
         <div className="absolute right-0 left-1/2 top-80">
-          <BackgroundGradient toColor="#fde74c" />
+          <BackgroundGradient to="amber-500" />
         </div>
       </div>
     </>
