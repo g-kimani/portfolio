@@ -13,7 +13,7 @@ export default function SkillsCollage() {
           {display.map((skill, index) => (
             <div
               key={index}
-              className="flex items-center transition-all hover:scale-110 w-[calc((100%/4)-1rem)]  aspect-square p-2 bg-gray-200"
+              className="flex items-center transition-all md:hover:scale-110 w-[calc((100%/4)-1rem)]  aspect-square p-2 bg-gray-200"
             >
               <img src={skill.src} alt={skill.alt} title={skill.alt} />
             </div>

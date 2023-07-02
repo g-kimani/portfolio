@@ -2,6 +2,7 @@ import ContactLinks from "../ContactLinks";
 import { useState } from "react";
 import Dialog from "../Dialog";
 import BackgroundGradient from "../BackgroundGradient";
+import { GitHub } from "@mui/icons-material";
 
 export default function ContactSection() {
   const [showPainting, setShowPainting] = useState(false);
@@ -30,7 +31,15 @@ export default function ContactSection() {
         </button>
         <Dialog open={showPainting} setOpen={setShowPainting} />
 
-        <p className="mt-10">&copy; 2023 George Kimani</p>
+        <div className="flex flex-wrap mx-auto justify-center mt-10 items-center gap-8">
+          <p className="">&copy; 2023 George Kimani</p>
+          <a
+            href="https://github.com/g-kimani/portfolio"
+            className="rounded-full p-2 hover:bg-[#fde74c] hover:text-black transition-all duration-300 align-middle"
+          >
+            <GitHub className="align-bottom" /> Source Code
+          </a>
+        </div>
         <BackgroundGradient to="#00ff00" />
       </div>
     </>
