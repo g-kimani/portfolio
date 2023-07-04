@@ -10,7 +10,7 @@ export default function TopNav({ active = "" }) {
   return (
     <>
       <div
-        className={`flex flex-row flex-wrap bg-[#060918] fixed w-full px-8 pt-6 justify-between z-50 `}
+        className={`flex flex-row flex-wrap bg-[#060918] fixed w-full px-8 py-4 justify-between z-50 `}
       >
         <div className="md:hidden">
           <button onClick={() => setDrawerOpen(true)}>

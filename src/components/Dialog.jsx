@@ -4,7 +4,7 @@ export default function Dialog({ open, setOpen }) {
     <>
       <div
         className={`fixed right-10 bottom-0 border-2 border-white rounded overflow-hidden bg-white shadow-md text-black max-w-[402px] ${
-          open ? "translate-y-0 bottom-10" : "translate-y-full"
+          open ? "translate-y-0 bottom-5" : "translate-y-full"
         } transition-all duration-300 ease-in-out`}
       >
         <div className="relative">
