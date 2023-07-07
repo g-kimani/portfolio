@@ -23,8 +23,10 @@ export default function TopNav({ active = "" }) {
               href={`#${link}`}
               key={index}
               className={`${
-                active === link ? "text-2xl" : ""
-              } font-semibold underline capitalize cursor-pointer transition-all duration-300 ease-in-out`}
+                active === link
+                  ? "bg-vibrant-yellow text-black px-2 py-1 rounded"
+                  : ""
+              } font-semibold capitalize cursor-pointer transition-all duration-300 ease-in-out`}
             >
               {link} {link === "about" || link === "contact" ? "Me" : ""}
             </a>

@@ -3,7 +3,7 @@ export default function Dialog({ open, setOpen }) {
   return (
     <>
       <div
-        className={`fixed right-10 bottom-0 border-2 border-white rounded overflow-hidden bg-white shadow-md text-black max-w-[402px] ${
+        className={`fixed right-1 bottom-0 border-2 border-white rounded overflow-hidden bg-white shadow-md text-black max-w-[402px] ${
           open ? "translate-y-0 bottom-5" : "translate-y-full"
         } transition-all duration-300 ease-in-out`}
       >
@@ -24,7 +24,6 @@ export default function Dialog({ open, setOpen }) {
           <button
             className="bg-white text-base float-right font-semibold p-1  border-2 border-[#fde74c] hover:border-[#fff] hover:bg-[#fde74c] hover:text-black transition-all duration-500  tracking-normal"
             onClick={() => {
-              console.log(open);
               setOpen(false);
             }}
           >

@@ -35,7 +35,9 @@ export default function ContactSection() {
           <p className="">&copy; 2023 George Kimani</p>
           <a
             href="https://github.com/g-kimani/portfolio"
+            target="_blank"
             className="rounded-full p-2 hover:bg-[#fde74c] hover:text-black transition-all duration-300 align-middle"
+            rel="noreferrer"
           >
             <GitHub className="align-bottom" /> Source Code
           </a>

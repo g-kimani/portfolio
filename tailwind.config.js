@@ -13,7 +13,11 @@ export default {
       ],
       courier: "Courier New, Courier, monospaces",
     },
-    extend: {},
+    extend: {
+      colors: {
+        "vibrant-yellow": "#fde74c",
+      },
+    },
   },
   plugins: [],
 };
