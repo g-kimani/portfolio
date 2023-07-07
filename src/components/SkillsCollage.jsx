@@ -5,7 +5,7 @@ export default function SkillsCollage() {
   display.splice(15, 1);
   return (
     <>
-      <div className="md:min-w-[450px] m-auto">
+      <div className="xl:min-w-[450px] m-auto">
         <p className="block text-lg underline my-4 font-medium leading-6 text-center">
           Technologies
         </p>
@@ -13,7 +13,7 @@ export default function SkillsCollage() {
           {display.map((skill, index) => (
             <div
               key={index}
-              className="flex items-center transition-all md:hover:scale-110 w-[calc((100%/4)-1rem)]  aspect-square p-2 bg-gray-200"
+              className="flex items-center transition-all xl:hover:scale-110 w-[calc((100%/4)-1rem)]  aspect-square p-2 bg-gray-200"
             >
               <img src={skill.src} alt={skill.alt} title={skill.alt} />
             </div>

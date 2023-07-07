@@ -5,7 +5,7 @@ export default function ProjectsSection() {
   return (
     <>
       <div>
-        <p className="block text-lg underline mt-10 mb-2 font-medium leading-6 text-center md:text-left">
+        <p className="block text-lg underline mt-10 mb-2 font-medium leading-6 text-center xl:text-left">
           Projects
         </p>
         <p className="">

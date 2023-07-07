@@ -15,6 +15,13 @@ export default function SkillsCarousel() {
     prevArrow: <PrevArrow />,
     responsive: [
       {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+        },
+      },
+      {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
@@ -41,7 +48,7 @@ export default function SkillsCarousel() {
         <Slider {...settings}>
           {Object.values(skills).map((logo, index) => (
             <div key={index} className="p-2">
-              <div className="w-full bg-slate-200 p-4 rounded m-1 shadow-md flex justify-center items-center transition-all md:hover:scale-110">
+              <div className="w-full bg-slate-200 p-4 rounded m-1 shadow-md flex justify-center items-center transition-all xl:hover:scale-110">
                 <img
                   className="h-40"
                   src={logo.src}

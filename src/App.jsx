@@ -40,34 +40,34 @@ function App() {
   return (
     <>
       <TopNav active={activeSection} />
-      <div className="scroll-container scroll-smooth md:h-screen overflow-y-scroll md:snap-y md:snap-mandatory ">
+      <div className="scroll-container scroll-smooth xl:h-screen xl:overflow-y-scroll xl:snap-y xl:snap-mandatory ">
         <div
           id="intro"
-          className="section p-4 md:h-screen md:snap-start md:py-8 md:px-40 md:relative"
+          className="section p-4 xl:h-screen xl:snap-start xl:py-8 xl:px-40 xl:relative"
         >
           <IntroSection />
         </div>
         <div
           id="projects"
-          className="section p-4 md:h-screen md:snap-start md:py-8 md:px-40 md:relative"
+          className="section p-4 xl:h-screen xl:snap-start xl:py-8 xl:px-40 xl:relative"
         >
           <ProjectsSection />
         </div>
         <div
           id="about"
-          className="section p-4 md:h-screen md:snap-start md:py-8 md:px-40 md:relative"
+          className="section p-4 xl:h-screen xl:snap-start xl:py-8 xl:px-40 xl:relative"
         >
           <AboutSection />
         </div>
         <div
           id="skills"
-          className="section p-4 md:h-screen md:snap-start md:py-8 md:px-40 md:relative"
+          className="section p-4 xl:h-screen xl:snap-start xl:py-8 xl:px-40 xl:relative"
         >
           <SkillsSection />
         </div>
         <div
           id="contact"
-          className="section p-4 md:h-screen md:snap-start md:py-8 md:px-40 md:relative"
+          className="section p-4 xl:h-screen xl:snap-start xl:py-8 xl:px-40 xl:relative"
         >
           <ContactSection />
         </div>

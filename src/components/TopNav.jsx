@@ -12,12 +12,12 @@ export default function TopNav({ active = "" }) {
       <div
         className={`flex flex-row flex-wrap bg-[#060918] fixed w-full px-8 py-4 justify-between z-50 `}
       >
-        <div className="md:hidden">
+        <div className="xl:hidden">
           <button onClick={() => setDrawerOpen(true)}>
             <MenuIcon />
           </button>
         </div>
-        <div className="hidden md:flex flex-row items-center gap-x-4">
+        <div className="hidden xl:flex flex-row items-center gap-x-4">
           {links.map((link, index) => (
             <a
               href={`#${link}`}

@@ -11,7 +11,7 @@ export default function IntroSection() {
             <p className="mt-20 text-md leading-8 text-gray-100">
               Welcome to my portfolio my name is...
             </p>
-            <h1 className="my-8 md:my-16 text-4xl font-bold tracking-tight sm:text-6xl">
+            <h1 className="my-8 xl:my-16 text-4xl font-bold tracking-tight sm:text-6xl">
               George Kimani
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-100">
