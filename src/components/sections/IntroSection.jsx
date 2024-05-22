@@ -6,8 +6,8 @@ export default function IntroSection() {
   return (
     <>
       <div>
-        <div className="flex flex-row flex-wrap lg:mx-0 text-left">
-          <div className="max-w-2xl">
+        <div className="grid grid-cols-2 grid-rows-2">
+          <div className="max-w-2xl row-span-2">
             <p className="mt-20 text-md leading-8 text-gray-100">
               Welcome to my portfolio my name is...
             </p>
@@ -26,11 +26,22 @@ export default function IntroSection() {
               <ContactLinks size="large" />
             </div>
           </div>
+          <div>
+            <h2>Check out some of my projects</h2>
+            <div className="flex flex-row gap-x-4">
+              <a
+                href={"#projects"}
+                className="bg-vibrant-yellow text-black px-2 py-1 rounded font-semibold capitalize cursor-pointer transition-all duration-300 ease-in-out"
+              >
+                Projects
+              </a>
+            </div>
+          </div>
         </div>
-        <BackgroundGradient />
-        <div className="mt-8">
+        {/* <BackgroundGradient /> */}
+        {/* <div className="mt-8">
           <SkillsCarousel />
-        </div>
+        </div> */}
       </div>
     </>
   );
