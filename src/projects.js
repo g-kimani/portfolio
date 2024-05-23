@@ -11,6 +11,8 @@ export default [
     image: NCNews,
     liveDemo: "https://visionary-kashata-762e78.netlify.app/",
     github: "https://github.com/g-kimani/nc-news",
+    shortDescription:
+      "A mock news website I completed as part of the Northcoders bootcamp. Articles are pulled from a separate project API",
     description:
       "Welcome to the NC News Site, a react based web app that lets you view, vote and comment on a range of different articles over a range of different topics. Articles are pulled from the NC News Api project",
     tech: [skills.react, skills.psql, skills.vite, skills.express],
@@ -22,6 +24,8 @@ export default [
     title: "AirPark",
     image: AirPark,
     github: "https://github.com/g-kimani/airpark",
+    shortDescription:
+      "The AirBnb of parking spaces. AirPark was a two week project I completed as part of a JS Bootcamp.",
     description:
       "AirPark is a Airbnb clone that lets users rent out their unused parking spaces. As my first mobile app I am really proud of how this turned out. It was part of a group project and we had 2 weeks to provide an MVP. It is a completeley Full Stack application with user authentication",
     tech: [
@@ -37,6 +41,8 @@ export default [
     image: ConwaysGOL,
     github: "https://github.com/g-kimani/conways-game-of-life",
     liveDemo: "https://g-kimani.github.io/conways-game-of-life/",
+    shortDescription:
+      "Conways original game. A passion project that I undertook after getting obsessed with living automata",
     description:
       "A game following conways original rules, the game is meant to mimic the process of natural selection. I decided to clone this game as I had become facinated by how the use of simple rules could lead to complex patterns. I plan to see how I could add to these rules to show even more facinating results. Also the styling needs some work 😅",
     tech: [skills.html, skills.js],

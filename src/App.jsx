@@ -1,76 +1,51 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import TopNav from "./components/TopNav";
-import IntroSection from "./components/sections/IntroSection";
-import ProjectsSection from "./components/sections/ProjectsSection";
-import AboutSection from "./components/sections/AboutSection";
-import SkillsSection from "./components/sections/SkillsSection";
-import ContactSection from "./components/sections/ContactSection";
+import NavBar from "./components/NavBar";
+import MyIntro from "./components/sections/MyIntro";
+import MyProjects from "./components/sections/MyProjects";
+import MySkills from "./components/sections/MySkills";
+import MyContacts from "./components/sections/MyContacts";
 
 function App() {
   const [activeSection, setActiveSection] = useState("intro");
 
   useEffect(() => {
-    const scrollContainer = document.querySelector(".scroll-container");
-
-    const handleScroll = () => {
-      const sections = document.querySelectorAll(".section");
-
-      let activeSection = null;
+    const sections = document.querySelectorAll(".section");
+    const scrollContainer = document;
+    const handleScroll = (e) => {
+      const scrollElement = e.target.scrollingElement;
+      const scrollTop = scrollElement.scrollTop;
+      let currentSection = null;
       sections.forEach((section) => {
         const sectionTop = section.offsetTop - 1;
         const sectionHeight = section.offsetHeight;
+        const heightOffset = sectionHeight / 2;
 
         if (
-          scrollContainer.scrollTop >= sectionTop &&
-          scrollContainer.scrollTop < sectionTop + sectionHeight
+          scrollTop >= sectionTop - heightOffset &&
+          scrollTop < sectionTop + heightOffset
         ) {
-          activeSection = section;
+          currentSection = section;
         }
       });
-
-      setActiveSection(activeSection.id);
+      setActiveSection(currentSection.id);
     };
-    scrollContainer.addEventListener("scrollend", handleScroll);
+    scrollContainer.addEventListener("scroll", handleScroll);
     return () => {
-      scrollContainer.removeEventListener("scrollend", handleScroll);
+      scrollContainer.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
   return (
     <>
-      <TopNav active={activeSection} />
-      <div className="scroll-container scroll-smooth xl:h-screen xl:overflow-y-scroll xl:snap-y xl:snap-mandatory ">
-        <div
-          id="intro"
-          className="section p-4 xl:h-screen xl:snap-start xl:py-8 xl:px-40 xl:relative"
-        >
-          <IntroSection />
-        </div>
-        <div
-          id="projects"
-          className="section p-4 xl:h-screen xl:snap-start xl:py-8 xl:px-40 xl:relative"
-        >
-          <ProjectsSection />
-        </div>
-        <div
-          id="about"
-          className="section p-4 xl:h-screen xl:snap-start xl:py-8 xl:px-40 xl:relative"
-        >
-          <AboutSection />
-        </div>
-        <div
-          id="skills"
-          className="section p-4 xl:h-screen xl:snap-start xl:py-8 xl:px-40 xl:relative"
-        >
-          <SkillsSection />
-        </div>
-        <div
-          id="contact"
-          className="section p-4 xl:h-screen xl:snap-start xl:py-8 xl:px-40 xl:relative"
-        >
-          <ContactSection />
-        </div>
+      <div className="scroll-container">
+        <NavBar activeSection={activeSection} />
+        <MyIntro className={"section sm:h-screen py-20 sm:py-40"} />
+        <AboutMe className={"section sm:h-screen py-20 px-10 sm:px-40"} />
+        <MyProjects className={"section sm:h-screen py-20 px-10 sm:px-40 "} />
+        <MySkills className={"section sm:h-screen py-20 px-10 sm:px-40 "} />
+        <MyContacts
+          className={"section sm:h-screen px-20 sm:py-20 sm:px-40  "}
+        />
       </div>
     </>
   );

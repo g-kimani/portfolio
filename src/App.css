@@ -2,17 +2,3 @@
   margin: 0 auto;
   box-sizing: border-box;
 }
-
-/* .scroll-container {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-} */
-
-/* .section {
-  height: 100vh;
-  scroll-snap-align: start;
-  padding: 2rem 10rem;
-  position: relative;
-} */

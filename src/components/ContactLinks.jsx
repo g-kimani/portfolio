@@ -7,7 +7,7 @@ export default function ContactLinks({ size = "medium" }) {
     <>
       <div className="flex flex-row gap-x-4">
         <a href="https://github.com/g-kimani" target="_blank" rel="noreferrer">
-          <div className="rounded-full hover:bg-[#fde74c] hover:text-black transition-all duration-500 p-1  flex items-center justify-center">
+          <div className="rounded-full hover:bg-[#fde74c]  hover:text-black   transition-all duration-500 dark:hover:backdrop-blur dark:hover:bg-slate-500/50 dark:hover:text-white p-1  flex items-center justify-center">
             <GitHubIcon fontSize={size} />
           </div>
         </a>
@@ -16,12 +16,12 @@ export default function ContactLinks({ size = "medium" }) {
           target="_blank"
           rel="noreferrer"
         >
-          <div className="rounded-full hover:bg-[#fde74c] hover:text-black transition-all duration-500 p-1  flex items-center justify-center">
+          <div className="rounded-full hover:bg-[#fde74c] hover:text-black transition-all duration-500 dark:hover:backdrop-blur dark:hover:bg-slate-500/50 dark:hover:text-white  p-1  flex items-center justify-center">
             <LinkedInIcon fontSize={size} />
           </div>
         </a>
-        <a href="mailto:georgenkimani@hotmail.com?subject=From Portfolio site">
-          <div className="rounded-full hover:bg-[#fde74c] hover:text-black transition-all duration-500 p-1  flex items-center justify-center">
+        <a href="mailto:georgenkimani@hotmail.com?subject=I saw your portfolio and would like to reach out.">
+          <div className="rounded-full hover:bg-[#fde74c] hover:text-black transition-all duration-500 dark:hover:backdrop-blur dark:hover:bg-slate-500/50 dark:hover:text-white  p-1  flex items-center justify-center">
             <MailIcon fontSize={size} />
           </div>
         </a>
