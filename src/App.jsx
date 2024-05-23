@@ -2,6 +2,7 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import NavBar from "./components/NavBar";
 import MyIntro from "./components/sections/MyIntro";
+import AboutMe from "./components/sections/AboutMe";
 import MyProjects from "./components/sections/MyProjects";
 import MySkills from "./components/sections/MySkills";
 import MyContacts from "./components/sections/MyContacts";
