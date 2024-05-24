@@ -18,7 +18,7 @@ export default function MyProjects({ className }) {
               {projects.map((project, index) => (
                 <div key={index} className="w-full">
                   <div
-                    className="py-4 max-h-40 w-fit px-2 cursor-pointer transition-all duration-500  text-black dark:text-white  hover:bg-royal-black dark:sm:hover:bg-seashell dark:sm:hover:text-black  hover:text-white my-2 rounded"
+                    className="py-4 max-h-40 w-f  it px-2 cursor-pointer transition-all duration-500  text-black dark:text-white  hover:bg-rich-black hover:text-white dark:sm:hover:bg-seashell dark:sm:hover:text-black   my-2 rounded"
                     onClick={() => setCurrentProject(() => project)}
                   >
                     <div className="flex justify-between">
